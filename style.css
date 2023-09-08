@@ -55,5 +55,7 @@ a.github-url {
 
 a.github-url:hover {
   color: #fa0606;
+}
+a:hover {
   background-color: #007bff;
 }
