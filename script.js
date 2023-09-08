@@ -16,10 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     '[data-testid="currentUTCTime"]'
   );
 
-  currentDayOfTheWeekElement.textContent = `Today is ${
-    daysOfWeek[now.getUTCDay()]
-  }`;
-  currentUTCTimeElement.textContent = `Current UTC Time: ${now.getUTCHours()}:${String(
-    now.getUTCMinutes()
-  ).padStart(2, "0")}`;
+  currentDayOfTheWeekElement.textContent = daysOfWeek[now.getUTCDay()];
+  currentUTCTimeElement.textContent = `Current UTC Time: ${now.getTime()} milliseconds`;
 });
